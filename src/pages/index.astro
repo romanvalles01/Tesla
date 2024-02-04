@@ -1,28 +1,41 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ModelY from "../components/ModelY.astro";
-import Model3 from "../components/Model3.astro";
-import ModelX from "../components/ModelX.astro";
-import ModelS from "../components/ModelS.astro";
-import Section from "../components/Section.astro";
 
-import CyberTruck from "../components/CyberTruck.astro";
 import LandingHeader from "../components/LandingHeader.astro";
 import HeroSection from "../components/HeroSection.astro";
+import Supra from "../components/Supra.astro";
+import GtrR34 from "../components/GtrR34.astro";
+import Rx7 from "../components/Rx7.astro";
+import S15 from "../components/S15.astro";
+import JZX100 from "../components/JZX100.astro";
+import Nsx from "../components/Nsx.astro";
 ---
 
-<Layout title="Tesla">
+<Layout title="Drift Cars">
   <LandingHeader />
   <main
-    class="snap-y snap-mandatory relative w-full h-screen overflow-auto overflow-x-hidden"
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto overflow-x-hidden scroll-smooth"
   >
     <div class="snap-center">
       <HeroSection />
     </div>
-    <div class="snap-center"><ModelY /></div>
-    <div class="snap-center"><Model3 /></div>
-    <div class="snap-center"><ModelX /></div>
-    <div class="snap-center"><ModelS /></div>
-    <div class="snap-center"><CyberTruck /></div>
+    <div class="snap-center">
+      <Supra />
+    </div>
+    <div class="snap-center">
+      <GtrR34 />
+    </div>
+    <div class="snap-center">
+      <Rx7 />
+    </div>
+    <div class="snap-center">
+      <S15 />
+    </div>
+    <div class="snap-center">
+      <JZX100 />
+    </div>
+    <div class="snap-center">
+      <Nsx />
+    </div>
   </main>
 </Layout>
